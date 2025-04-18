@@ -1,0 +1,1 @@
+print(" Om Sai Ram Shree Swami Samarth ")
