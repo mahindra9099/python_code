@@ -7,6 +7,9 @@ def password_gen(password):
     if len(password)<8:
         #print("in len")
         return False
+    if not password[0].isupper():
+        print("not upper")
+        return False
     if not any(char.islower() for char in password):
         #print("in lower")
         return False
@@ -19,5 +22,5 @@ def password_gen(password):
     return True
 
 
-result= password_gen("abjc_@fhhhzJh")
+result= password_gen("Abjc_@fhhhzJh")
 print(result)
